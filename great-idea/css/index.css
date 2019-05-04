@@ -69,41 +69,49 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Header Styles */
-
-header {
-    width: 100%;
+.header {
     display: flex;
-    flex-direction: row;
-}
-
-header nav {
-    margin-top: 40px; 
-    width: 610px;
     justify-content: space-between;
+}
+
+.header .navbar {
+    margin-top: 35px 0; 
+    width: 488px;
+    justify-content: space-between;
+    vertical-align: top;
     display: flex;
 }
 
-header nav a {
+.header.navbar .a {
     text-decoration: none;
-    color: #b0b0b0;
+    color: grey;
+    margin-right: 65px;
+    font-size: 14px;
+    
 }
 
-header nav a:hover {
+.header .navbar a:hover {
     text-decoration: underline;
     color: black;
 }
 
-header .logo {
-    margin: 28px 0 0 91px;
-       
-}
+.header .navbar .a:first-child {
+    margin-left: 0;
+  }
+  
+.header .navbar a:last-child {
+    margin-right: 0;
+  }
+.header .logo {
+    margin: top 35px;
+ }
 
 /* Call To Action (CTA) Styles */
 
 .cta {
     display: flex;
-    margin-top: 72px;
     justify-content: flex-end;
+    
 }
 
 .cta .cta-text {
@@ -129,8 +137,15 @@ header .logo {
 
 .cta .cta-text button:hover {
     background: black;
-    color: white;
+    color: red;
 }
+
+.cta img {
+    display: inline-block;
+    margin-top: 69px;
+  }
+
+
 
 /* Main Content Styles */
 
@@ -145,6 +160,7 @@ header .logo {
 
 .main-content .top-content {
     display: flex;
+
 }
 
 .main-content .middle-img {
